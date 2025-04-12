@@ -1,70 +1,73 @@
-# Getting Started with Create React App
+# Advanced To-Do App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is an advanced to-do application built with React, Redux, Material-UI, and integrated with localStorage for user authentication. The app allows users to log in, manage tasks, and log out. The tasks are displayed with input fields for adding and listing tasks.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **User Authentication**: Users can log in with a username and password (hardcoded for simplicity).
+- **Task Management**: Users can add, list, and manage tasks.
+- **Logout**: Users can log out, and the authentication state will be cleared.
+- **Responsive UI**: The application is fully responsive, built using Material-UI and styled with a mobile-first approach.
+- **LocalStorage Integration**: Authentication state and user info are stored in localStorage for persistence across page reloads.
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **React**: For building the user interface.
+- **Redux**: For state management, including authentication and task state.
+- **Material-UI**: For UI components like buttons, text fields, and more.
+- **localStorage**: To persist authentication state across sessions.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation
 
-### `npm test`
+Follow these steps to get the application up and running locally:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone the repository:
 
-### `npm run build`
+ 
+   git clone https://github.com/your-username/advanced-todo-app.git
+   cd advanced-todo-app
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+npm install
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+npm start
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Usage
+Login: Enter the username and password (hardcoded as user and password) to log in.
 
-### `npm run eject`
+Task Management: Once logged in, you can add and manage tasks. The tasks will be listed below the input field.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Logout: Click the logout button to log out and return to the login screen.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Project Structure
+src/
+├── components/
+│   ├── TaskInput.js
+│   └── TaskList.js
+├── pages/
+│   ├── Login.js
+│   └── Logout.js
+├── redux/
+│   └── reducers/
+│       ├── authSlice.js
+│       ├── weatherSlice.js
+│       └── taskSlice.js  <-- Added taskSlice.js
+│   └── store.js  <-- No change here, just adding taskSlice to it
+├── App.js
+└── index.js
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+Contribution
+Feel free to fork this project, create an issue, or submit a pull request if you'd like to contribute improvements or bug fixes.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+### Customization:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- **Repository Link**: Change `https://github.com/mamta-vyas/advanced-todo-app.git` to your actual GitHub repository URL.
+- **Project Details**: You can adjust the "Technologies Used" and "Features" section based on your actual app functionality.
 
-### Analyzing the Bundle Size
+This `README.md` file should give a good overview of your project for anyone viewing it on GitHub or using it locally. Let me know if you'd like to add or change anything specific!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
