@@ -64,10 +64,5 @@ License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 
-### Customization:
 
-- **Repository Link**: Change `https://github.com/mamta-vyas/advanced-todo-app.git` to your actual GitHub repository URL.
-- **Project Details**: You can adjust the "Technologies Used" and "Features" section based on your actual app functionality.
-
-This `README.md` file should give a good overview of your project for anyone viewing it on GitHub or using it locally. Let me know if you'd like to add or change anything specific!
 

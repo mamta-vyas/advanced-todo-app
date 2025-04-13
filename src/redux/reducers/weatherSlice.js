@@ -1,10 +1,12 @@
 // weatherSlice.js
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
+const API_KEY = process.env.REACT_APP_WEATHER_API_KEY;
+
 export const fetchWeather = createAsyncThunk(
   'weather/fetchWeather',
   async (taskDescription) => {
-    const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${taskDescription}&appid=bb95f8f22afdbb77478aad214bf8e613`);
+    const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${taskDescription}&appid=${API_KEY}`);
     const data = await response.json();
     return data;
   }
